@@ -1,0 +1,78 @@
+/* Instruction 3: Consistent Typography and Color Scheme */
+:root {
+    /* Define a color palette */
+    --primary-color: #c86289; /* Blue for highlights/buttons */
+    --secondary-color: #0f2841; /* Dark for background/text */
+    --accent-color: #df7064; /* Red for alerts/hover states */
+    --text-light: #e7bcce; /* Light text for dark backgrounds */
+    --font-family-header: 'Helvetica Neue', Arial, sans-serif;
+    --font-family-body: 'Georgia', serif;
+}
+
+body {
+    font-family: var(--font-family-body);
+    color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: beige;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-family-header);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+/* Header/Navigation Styling */
+header {
+    background-color: var(--secondary-color);
+    padding: 15px 0;
+    position: sticky; /* Keep navigation visible */
+    top: 0;
+    z-index: 100;
+}
+.content-section img{
+     width: 200px;
+    border-radius: 20%;
+}
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: bold;
+    /* Consistent hover effect */
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+/* General Section Styling */
+.content-section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-bottom: 1px solid #f796ce; /* Visual separation */
+}
+
+/* Project Card Styling (Instruction 4: Visuals) */
+.project-card {
+    border: 1px solid #f796ce;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: rgb(69, 167, 212);
+}
